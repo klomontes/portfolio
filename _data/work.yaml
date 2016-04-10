@@ -1,54 +1,70 @@
-- name: Mastermind Game
-  image: /images/mastermind.png
-  url: https://github.com/klomontes/js-mastermind
-  background: '#F8CA00'
-  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+- name:        Mastermind Game
+  image:       /images/mastermind.png
+  url:         http://klomontes.github.io/js-mastermind/
+  background:  '#F8CA00'
+  description: Classic code–breaking game built with HTML/CSS and JavaScript
   skills:
     - javascript
     - htmlcss
     - gamedev
 
-- name: PurpleHaze color scheme
-  image: /images/purple-haze.png
-  url: https://github.com/klomontes/purple-haze-color-scheme
-  background: '#FF57A0'
-  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+- name:        SpiceFactory T-Shirts
+  image:       /images/spicefactory-alien.png
+  url:         https://dribbble.com/shots/2236533-SpiceFactory-Space-T-Shirt
+  background:  '#FED700'
+  description: Crafting software that is out of this world.
   skills:
-    - plugin
+    - tshirt
+    - printdesign
 
-- name: Geek Night logo
-  image: /images/geek-night.png
-  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+- name:        SpiceFactory notebook cover
+  image:       /images/spicefactory-pattern.png
+  url:         https://dribbble.com/shots/2555400-SpiceFactory-notebook-cover
+  background:  '#E43215'
+  description: 'SpiceFactory’s promo notebook cover design.'
   skills:
-    - logodesign
-    - illustrator
+    - tshirt
+    - printdesign
 
-- name: Nailed it
-  image: /images/nailed_it.png
+- name:        Oink
+  image:       /images/oink.png
+  url:         https://dribbble.com/shots/2238774-Oink
+  background:  '#f2f2f2'
   description: Just for fun
   skills:
     - illustrator
 
-- name: Oink
-  image: /images/oink.png
-  background: '#FC5B5F'
-  description: Just for fun
-  skills:
-    - illustrator
-
-- name: HeapSpace Kids
-  image: /images/heap-space-kids.png
-  background: '#4AC8FF'
-  description: An amazing educational program for kids organized by HeapSpace.
-  skills:
-    - logodesign
-    - illustrator
-
-- name: Tech Breakfast
-  image: /images/tech-breakfast.png
-  background: '#f2f2f2'
+- name:        Tech Breakfast
+  image:       /images/tech-breakfast.png
+  url:         http://heapspace.rs/techdorucak/
+  background:  '#f2f2f2'
   description: Monthly tech meetup in Belgrade where people gather over breakfast and exchange thoughts and ideas about tech. Organised by HeapSpace.rs
   skills:
     - logodesign
     - illustrator
 
+- name:        PurpleHaze color scheme for Sublime Text 3
+  image:       /images/purple-haze.png
+  url:         https://github.com/klomontes/purple-haze-color-scheme
+  background:  '#FED700'
+  description: I got bored with Monokai but no other color scheme seemed to work for me, so I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+  skills:
+    - plugin
+
+- name:        Geek Night
+  image:       /images/geek-night.png
+  url:         http://heapspace.rs/geeknight/
+  background:  '#4AC8FF'
+  description: Cover for monthly tech meetup in Belgrade.
+  skills:
+    - logodesign
+    - illustrator
+
+- name:        HeapSpace Kids
+  image:       /images/heap-space-kids.png
+  url:         https://dribbble.com/shots/2584312-HeapSpace-Kids
+  background:  '#4AC8FF'
+  description: An amazing educational program for kids organized by HeapSpace.
+  skills:
+    - logodesign
+    - illustrator
