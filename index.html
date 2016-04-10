@@ -2,15 +2,34 @@
 layout: default
 ---
 
-<table height="100%" width="100%" style="margin-bottom: 0;">
-  <tbody style="padding: 30px;">
-    <tr>
-      <td>
-        <p>Coming soon</p>
-        <p>klomontes@gmail.com</p>
-        <a href="https://github.com/klomontes" style="font-size: 26px; margin-right: 16px;"><i class="fa fa-github"></i></a>
-        <a href="https://dribbble.com/klomontes" style="font-size: 26px;"><i class="fa fa-dribbble"></i></a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<section class="header">
+  <div class="about">
+      <p>Hi! I’m Branko, designer and web developer. I’m a lead UI/UX designer and part of an awesome crew at <a href="http://spicefactory.co/" target="_blank">SpiceFactory</a>. Occasionaly, I think of writing a blog post.</p>
+  </div>
+  <ul id="skills" class="skills">
+    <li id="htmlcss">HTML5/CSS3</li>
+    <li id="javascript">JavaScript</li>
+    <li id="logodesign">Logo Design</li>
+    <li id="gamedev">Game Development</li>
+    <li id="plugin">Plugin</li>
+    <li id="printdesign">Print</li>
+    <li id="tshirt">T-Shirt</li>
+  </ul>
+  {% include footer.html %}
+</section>
+
+<section class="content">
+  <div class="work-items">
+    {% for item in site.data.work reversed %}
+      <div class="item {% for skill in item.skills %}{{ skill }} {% endfor %}">
+        <a href="{{ item.url }}" target="_blank" style="background: {{ item.background }}">
+          <img src="{{ item.image }}" alt="">
+          <div class="item-description">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

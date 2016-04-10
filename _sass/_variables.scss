@@ -1,15 +1,17 @@
 // Our variables
 $base-font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 700;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$link-color: #06cdff;
+
 $spacing-unit:     30px;
 
-$text-color:       #666;
-$background-color: #0b0c0b;
-$brand-color:      #d7fd84;
+$text-color:       #000;
+$background-color: #fff;
+$brand-color:      $link-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -20,3 +22,7 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+$screen-lg: 1024px;
+$screen-md: 992px;
+$screen-sm: 768px;

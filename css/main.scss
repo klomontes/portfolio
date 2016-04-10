@@ -6,7 +6,6 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "variables";
 @import "base";
-@import "skeleton";
 
 html,
 body {
@@ -15,56 +14,38 @@ body {
 
 section,
 footer {
-  padding-top: $spacing-unit * 3;
-  padding-bottom: $spacing-unit * 3;
   position: relative;
+}
+
+a {
+  color: $link-color;
 }
 
 h2 {
   margin-bottom: $spacing-unit;
 }
 
-// section:first-of-type {
-//   padding-top: $spacing-unit * 6;
-// }
+.header {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  position: fixed;
+}
 
+.about,
+.skills,
 footer {
-  // background-color: black;
-  // color: white;
+  padding: 25px 50px;
 }
 
-footer .social {
-  font-size: 0;
-  li {
-    font-size: 3rem;
-    line-height: $base-font-size * $base-line-height;
-  }
-  li + li { margin-left: $spacing-unit; }
+.about {
+  padding-top: 50px;
 }
 
-.project-cover {
-  // padding-bottom: 61.80%;
-  width: 100%;
-  background-color: whitesmoke;
-  border-radius: 1px;
-  margin-bottom: 2rem;
-  * {
-    margin-top: $spacing-unit / 2;
-    margin-bottom: $spacing-unit / 2;
-    margin-left: $spacing-unit / 2;
-  }
-}
-
-.project-mastermind {
-  background: #E3DCB5 url(/images/mastermind.png) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.project-purple-haze {
-  background: #E3DCB5 url(/images/purple-haze.png) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.content {
+  display: inline-block;
+  width: 70%;
+  float: right;
 }
 
 .section-title {
@@ -85,7 +66,11 @@ footer .social {
 }
 
 .work-items {
-  display: flex;
+  // margin-top: -10px;
+  column-count: 4;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  padding: 0 10px 10px 10px;
   .panel {
     flex: 1;
     display: inline-block;
@@ -93,27 +78,36 @@ footer .social {
     padding: 5px;
   }
   .item {
-    padding: 10px;
-    // background-color: #fff;
+    display: block;
     transition: all .3s ease;
+    padding-top: 10px;
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+    > a { display: block; }
     img {
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-    }
-    & + .item {
-      margin-top: 10px;
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
     }
     &.dimmed {
-      opacity: .3;
-      transform: scale(.95);
-      -webkit-filter: blur(1px);
+      opacity: 0;
+      // transform: scale(.9);
+      // -webkit-filter: blur(1px);
+      height: 0;
+      padding-top: 0;
+      // display: none;
     }
   }
   .item-description {
-    background: #1B1F1B;
-    padding: 10px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+    padding: 15px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    color: #111;
+    p {
+      margin-bottom: 0;
+      opacity: .4;
+      font-size: $small-font-size;
+    }
   }
 }
 
@@ -122,33 +116,55 @@ footer .social {
   margin: 0;
   li {
     display: inline-block;
-  }
-  input[type='radio'] {
-    display: none;
-  }
-  span {
+    margin-bottom: 5px;
     cursor: pointer;
     display: inline-block;
     padding: 3px 8px;
     background-color: $brand-color;
-    border-radius: 3px;
+    border-radius: 1px;
     font-weight: bold;
     color: black;
     transition: all .15s ease;
-  }
-
-  input[type='radio']:checked + span {
-    // background-color: pink;
-  }
-
-  input[type='radio']:not(:checked) + span {
-    transform: scale(.95);
-    opacity: .5;
-    -webkit-filter: blur(1px);
+    &.active {
+      background-color: #F8CA00;
+    }
   }
 }
 
-table td {
-  border: none;
-  text-align: center;
+@media (max-width: $screen-lg) {
+  .work-items {
+    column-count: 3;
+    -webkit-column-count: 3;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .header {
+    width: 40%;
+  }
+  .content {
+    width: 60%;
+  }
+  .work-items {
+    column-count: 2;
+    -webkit-column-count: 2;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .header,
+  .content {
+    width: 100%;
+    float: none;
+    position: relative;
+  }
+  .about,
+  .skills,
+  footer {
+    padding: 25px 15px;
+  }
+  .work-items {
+    column-count: 1;
+    -webkit-column-count: 1;
+  }
 }
