@@ -1,0 +1,54 @@
+- name: Mastermind Game
+  image: /images/mastermind.png
+  url: https://github.com/klomontes/js-mastermind
+  background: '#F8CA00'
+  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+  skills:
+    - javascript
+    - htmlcss
+    - gamedev
+
+- name: PurpleHaze color scheme
+  image: /images/purple-haze.png
+  url: https://github.com/klomontes/purple-haze-color-scheme
+  background: '#FF57A0'
+  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+  skills:
+    - plugin
+
+- name: Geek Night logo
+  image: /images/geek-night.png
+  description: I got bored with Monokai but no other color scheme seemed to work for me. So, I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
+  skills:
+    - logodesign
+    - illustrator
+
+- name: Nailed it
+  image: /images/nailed_it.png
+  description: Just for fun
+  skills:
+    - illustrator
+
+- name: Oink
+  image: /images/oink.png
+  background: '#FC5B5F'
+  description: Just for fun
+  skills:
+    - illustrator
+
+- name: HeapSpace Kids
+  image: /images/heap-space-kids.png
+  background: '#4AC8FF'
+  description: An amazing educational program for kids organized by HeapSpace.
+  skills:
+    - logodesign
+    - illustrator
+
+- name: Tech Breakfast
+  image: /images/tech-breakfast.png
+  background: '#f2f2f2'
+  description: Monthly tech meetup in Belgrade where people gather over breakfast and exchange thoughts and ideas about tech. Organised by HeapSpace.rs
+  skills:
+    - logodesign
+    - illustrator
+

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="header">
+  <div class="about">
+    <p>Hi! I’m Branko, UI/UX designer and frontend developer. I am a part of awesome crew at <a href="http://spicefactory.co/" target="_blank">SpiceFactory</a>. I occasionaly think of writing a blog post.</p>
+  </div>
+  <ul id="skills" class="skills">
+    <li id="htmlcss">HTML5/CSS3</li>
+    <li id="javascript">JavaScript</li>
+    <li id="jekyll">Jekyll</li>
+    <li id="photoshop">PhotoShop</li>
+    <li id="illustrator">Illustrator</li>
+    <li id="sketch">Sketch</li>
+    <li id="logodesign">Logo Design</li>
+    <li id="gamedev">Game Development</li>
+  </ul>
+  {% include footer.html %}
+</section>
+
+<section class="content">
+  <div class="work-items">
+    {% for item in site.data.work %}
+      <div class="item {% for skill in item.skills %}{{ skill }} {% endfor %}">
+        <a href="{{ item.url }}" target="_blank" style="background: {{ item.background }}">
+          <img src="{{ item.image }}" alt="">
+          <div class="item-description">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
