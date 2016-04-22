@@ -23,8 +23,10 @@ layout: default
     {% for item in site.data.work reversed %}
       <div class="item {% for skill in item.skills %}{{ skill }} {% endfor %}">
         <a href="{{ item.url }}" target="_blank" style="background: {{ item.background }}">
-          <img src="{{ item.image }}" alt="">
-          <div class="item-description">
+          <div class="item-image-wrapper">
+            <img src="{{ item.image }}" alt="{{ item.name }}">
+          </div>
+          <div class="item-description {{ item.text_color }}">
             <h3>{{ item.name }}</h3>
             <p>{{ item.description }}</p>
           </div>

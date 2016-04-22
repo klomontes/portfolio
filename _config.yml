@@ -10,9 +10,6 @@ github_username:  klomontes
 
 # Build settings
 markdown: kramdown
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://brankotomic.com" # the base hostname & protocol for your site
-github_username:  klomontes
 
-# Build settings
-markdown: kramdown
+sass:
+  style: compressed

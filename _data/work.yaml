@@ -11,20 +11,22 @@
 - name:        SpiceFactory T-Shirts
   image:       /images/spicefactory-alien.png
   url:         https://dribbble.com/shots/2236533-SpiceFactory-Space-T-Shirt
-  background:  '#FED700'
+  background:  '#222'
+  text_color:  light
   description: Crafting software that is out of this world.
   skills:
     - tshirt
     - printdesign
 
-- name:        SpiceFactory notebook cover
-  image:       /images/spicefactory-pattern.png
-  url:         https://dribbble.com/shots/2555400-SpiceFactory-notebook-cover
-  background:  '#E43215'
-  description: 'SpiceFactory’s promo notebook cover design.'
-  skills:
-    - tshirt
-    - printdesign
+# - name:        SpiceFactory notebook cover
+#   image:       /images/spicefactory-pattern.png
+#   url:         https://dribbble.com/shots/2555400-SpiceFactory-notebook-cover
+#   background:  '#E43215'
+#   text_color:  light
+#   description: 'SpiceFactory’s promo notebook cover design.'
+#   skills:
+#     - tshirt
+#     - printdesign
 
 - name:        Oink
   image:       /images/oink.png
@@ -46,7 +48,8 @@
 - name:        PurpleHaze color scheme for Sublime Text 3
   image:       /images/purple-haze.png
   url:         https://github.com/klomontes/purple-haze-color-scheme
-  background:  '#FED700'
+  background:  '#2E1536'
+  text_color:  light
   description: I got bored with Monokai but no other color scheme seemed to work for me, so I had decided to create my own. I am also a big fan of purple... and Jimi Hendrix.
   skills:
     - plugin
