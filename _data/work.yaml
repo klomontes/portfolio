@@ -1,7 +1,7 @@
 - name:        Mastermind Game
   image:       /images/mastermind.png
   url:         http://klomontes.github.io/js-mastermind/
-  background:  '#F8CA00'
+  background:  '#E3DCB5'
   description: Classic code–breaking game built with HTML/CSS and JavaScript
   skills:
     - javascript
@@ -32,18 +32,9 @@
   image:       /images/oink.png
   url:         https://dribbble.com/shots/2238774-Oink
   background:  '#f2f2f2'
-  description: Just for fun
   skills:
     - illustrator
-
-- name:        Tech Breakfast
-  image:       /images/tech-breakfast.png
-  url:         http://heapspace.rs/techdorucak/
-  background:  '#f2f2f2'
-  description: Monthly tech meetup in Belgrade where people gather over breakfast and exchange thoughts and ideas about tech. Organised by HeapSpace.rs
-  skills:
     - logodesign
-    - illustrator
 
 - name:        PurpleHaze color scheme for Sublime Text 3
   image:       /images/purple-haze.png
@@ -57,8 +48,18 @@
 - name:        Geek Night
   image:       /images/geek-night.png
   url:         http://heapspace.rs/geeknight/
-  background:  '#4AC8FF'
+  background:  '#12210D'
+  text_color:  light
   description: Cover for monthly tech meetup in Belgrade.
+  skills:
+    - logodesign
+    - illustrator
+
+- name:        Tech Breakfast
+  image:       /images/tech-breakfast.png
+  url:         http://heapspace.rs/techdorucak/
+  background:  '#FFBF00'
+  description: Logo for monthly tech meetup in Belgrade where people gather over breakfast and exchange thoughts, achievements and ideas about tech
   skills:
     - logodesign
     - illustrator
@@ -67,7 +68,7 @@
   image:       /images/heap-space-kids.png
   url:         https://dribbble.com/shots/2584312-HeapSpace-Kids
   background:  '#4AC8FF'
-  description: An amazing educational program for kids organized by HeapSpace.
+  description: Logo for an amazing educational program for kids organized by HeapSpace
   skills:
     - logodesign
     - illustrator

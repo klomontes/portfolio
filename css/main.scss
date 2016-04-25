@@ -112,6 +112,12 @@ $item-spacing: 20px;
     }
     &:hover {
       transform: translateY(-3px);
+      .item-description p {
+        color: $text-color;
+      }
+      .item-description.light p {
+        color: #fff;
+      }
     }
   }
   .item-description {
@@ -129,6 +135,7 @@ $item-spacing: 20px;
       margin-bottom: 0;
       color: rgba($text-color, .4);
       font-size: $small-font-size;
+      transition: color .3s ease;
     }
   }
 }
